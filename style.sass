@@ -62,6 +62,26 @@ body
       font-size: 1.3rem
       margin-right: 0.3rem
 
+.search
+  grid-column: 8 /10
+  grid-row: 2 / 3
+  &-form
+    display: grid
+    grid-template-columns: repeat(10, 10%) 
+  &-input
+    grid-column: 3 / -1
+    grid-row: 1 / 2
+    padding: 0.3rem 0.4rem
+    font-size: 1.3em
+    border: none
+    border-bottom: 0.1rem solid #12376e
+    outline: none
+  &-btn
+    grid-column: 10 / -1
+    grid-row: 1 / 2
+    cursor: pointer
+    border: none
+    background-color: transparent
 
 
 

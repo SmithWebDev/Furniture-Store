@@ -105,3 +105,41 @@ body {
   font-size: 1.3rem;
   margin-right: 0.3rem;
 }
+
+.search {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 2;
+  grid-column: 8 /10;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.search-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10%)[10];
+      grid-template-columns: repeat(10, 10%);
+}
+
+.search-input {
+  grid-column: 3 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0.3rem 0.4rem;
+  font-size: 1.3em;
+  border: none;
+  border-bottom: 0.1rem solid #12376e;
+  outline: none;
+}
+
+.search-btn {
+  grid-column: 10 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
