@@ -138,6 +138,7 @@ body
   visibility: hidden
   opacity: 0
   transition: all 1s
+  z-index: 100
 
 
   &-first-list
@@ -165,7 +166,7 @@ body
 .banner
   grid-column: 2 / 10
   grid-row: 4 / 5
-  background-color: #cccccc 
+  // background-color: #cccccc 
   position: relative
   &-content
     position: absolute
@@ -174,6 +175,7 @@ body
     transform: translate(-50%, -50%)
     text-transform: uppercase
     text-align: center
+    z-index: 50
   &-heading
     font-size: 10rem
     color: #12376e
@@ -194,8 +196,7 @@ body
       left: 0
       transform: translateY(-50%)
       width: 100%
-      transition: top .2s
-      
+      transition: top .2s      
     &:hover &-text1
       top: -100%
     &-text2
@@ -205,12 +206,58 @@ body
       transform: translateY(-50%)
       width: 100%
       transition: top .2s
-
     &:hover &-text2
       top: 50%
-
     
 .slideshow
-  display: none
+  height: 100%
+  overflow: hidden
+  &-wrapper
+    display: flex
+    width: 400%
+    height: 100%
+    position: relative
+    animation: slideshow 20s infinite
+
+.slide 
+  & img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &-btn
+    
+
+
+
+@keyframes slideshow 
+  0%
+    left: 0
+  10%
+    left: 0
+  15%
+    left: -100%
+  25%
+    left: -100%
+  30%
+    left: -200%
+  40%
+    left: -200%
+  45%
+    left: -300%
+  55%
+    left: -300%
+  60%
+    left: -200%
+  70%
+    left: -200%
+  75%
+    left: -100%
+  85%
+    left: -100%
+  90%
+    left: 0
+  100%
+    left: 0
+
   // End of Banner
   
