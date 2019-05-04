@@ -19,9 +19,9 @@ body {
   -ms-grid-columns: minmax(6rem, 1fr) (minmax(min-content, 16rem))[8] minmax(6rem, 1fr);
       grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(-webkit-min-content, 16rem)) minmax(6rem, 1fr);
       grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
-  -ms-grid-rows: (min-content)[3] 70vh;
-      grid-template-rows: repeat(3, -webkit-min-content) 70vh;
-      grid-template-rows: repeat(3, min-content) 70vh;
+  -ms-grid-rows: (min-content)[3] 70vh min-content;
+      grid-template-rows: repeat(3, -webkit-min-content) 70vh -webkit-min-content;
+      grid-template-rows: repeat(3, min-content) 70vh min-content;
   grid-gap: 1.6rem 0;
   margin-top: 1.6rem;
 }
