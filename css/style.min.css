@@ -209,8 +209,6 @@ body {
 .second-nav-item:first-child:hover .dropdown {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .dropdown {
@@ -225,6 +223,8 @@ body {
       grid-template-columns: repeat(7, 10rem);
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .dropdown-first-list {
