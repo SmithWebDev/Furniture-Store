@@ -225,7 +225,40 @@ body
     height: 100%
     object-fit: cover
   &-btn
-    
+    width: 1.3rem
+    height: 1.3rem
+    color: #bbbbbb
+    border: .2rem solid #d38800
+    border-radius: 50%
+    outline: none
+    position: absolute
+    top: 95%
+    transform: translateX(-50%)
+    z-index: 10
+    &:focus
+      background-color: #12376e
+
+    &-1
+      left: 47%
+      &:focus ~ .slideshow-wrapper
+        animation: none
+        left: 0
+    &-2
+      left: 49%
+      &:focus ~ .slideshow-wrapper
+        animation: none
+        left: -100%
+    &-3
+      left: 51%
+      &:focus ~ .slideshow-wrapper
+        animation: none
+        left: -200%
+    &-4
+      left: 53%
+      &:focus ~ .slideshow-wrapper
+        animation: none
+        left: -300%
+
 
 
 
