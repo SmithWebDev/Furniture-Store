@@ -12,7 +12,7 @@ body
 .container
   display: grid
   grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr)
-  grid-template-rows: repeat(3, min-content)
+  grid-template-rows: repeat(3, min-content) 70vh
   grid-gap: 1.6rem 0
   margin-top: 1.6rem
 
@@ -162,8 +162,55 @@ body
 // End of Navbar
 
   // Banner
+.banner
+  grid-column: 2 / 10
+  grid-row: 4 / 5
+  background-color: #cccccc 
+  position: relative
+  &-content
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-transform: uppercase
+    text-align: center
+  &-heading
+    font-size: 10rem
+    color: #12376e
+    margin-bottom: 6rem
+  &-btn
+    width: 16rem
+    height: 5rem
+    background: linear-gradient(to top, #00154c, #12376e, #23487f)
+    color: #ffffff
+    border: .1rem solid #ffffff
+    border-radius: .3rem
+    outline: none
+    position: relative
+    overflow: hidden
+    &-text1
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      width: 100%
+      transition: top .2s
+      
+    &:hover &-text1
+      top: -100%
+    &-text2
+      position: absolute
+      top: 150%
+      left: 0
+      transform: translateY(-50%)
+      width: 100%
+      transition: top .2s
 
-  
+    &:hover &-text2
+      top: 50%
 
+    
+.slideshow
+  display: none
   // End of Banner
   
